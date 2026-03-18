@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F5F7FA"
+    tools:context=".MainActivity">
+
+    <!-- Top bar -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#4F46E5"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Good morning,"
+            android:textColor="#C7D2FE"
+            android:textSize="13sp"/>
+
+        <TextView
+            android:id="@+id/tvName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="User"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/tvGoalPill"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Goal: Maintain"
+            android:textColor="#E0E7FF"
+            android:textSize="12sp"
+            android:layout_marginTop="4dp"/>
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- Calorie summary card -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="#FFFFFF"
+                android:padding="16dp"
+                android:layout_marginBottom="16dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="12dp">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Eaten today"
+                            android:textColor="#888780"
+                            android:textSize="12sp"/>
+                        <TextView
+                            android:id="@+id/tvEatenTotal"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="0 kcal"
+                            android:textColor="#1A1A2E"
+                            android:textSize="22sp"
+                            android:textStyle="bold"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:gravity="end">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Daily target"
+                            android:textColor="#888780"
+                            android:textSize="12sp"/>
+                        <TextView
+                            android:id="@+id/tvTarget"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="-- kcal"
+                            android:textColor="#4F46E5"
+                            android:textSize="15sp"
+                            android:textStyle="bold"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <ProgressBar
+                    android:id="@+id/progressCalorie"
+                    style="@android:style/Widget.ProgressBar.Horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="8dp"
+                    android:max="100"
+                    android:progress="0"
+                    android:progressTint="#4F46E5"
+                    android:progressBackgroundTint="#F1EFE8"/>
+
+                <TextView
+                    android:id="@+id/tvProgressLabel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="0% of target"
+                    android:textColor="#888780"
+                    android:textSize="11sp"
+                    android:gravity="end"
+                    android:layout_marginTop="4dp"/>
+            </LinearLayout>
+
+            <!-- ADD FOOD SECTION -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ADD FOOD"
+                android:textColor="#5F5E5A"
+                android:textSize="11sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="10dp"/>
+
+            <!-- Tab row: Preset / Custom -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="12dp">
+
+                <Button
+                    android:id="@+id/btnTabPreset"
+                    android:layout_width="0dp"
+                    android:layout_height="36dp"
+                    android:layout_weight="1"
+                    android:text="Preset Foods"
+                    android:backgroundTint="#4F46E5"
+                    android:textColor="#FFFFFF"
+                    android:textSize="12sp"
+                    android:layout_marginEnd="4dp"/>
+
+                <Button
+                    android:id="@+id/btnTabCustom"
+                    android:layout_width="0dp"
+                    android:layout_height="36dp"
+                    android:layout_weight="1"
+                    android:text="Custom Entry"
+                    android:backgroundTint="#E0E7FF"
+                    android:textColor="#4F46E5"
+                    android:textSize="12sp"
+                    android:layout_marginStart="4dp"/>
+            </LinearLayout>
+
+            <!-- Preset food panel -->
+            <LinearLayout
+                android:id="@+id/panelPreset"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+                <Spinner
+                    android:id="@+id/spFood"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:background="@drawable/spinner_bg"
+                    android:padding="8dp"
+                    android:layout_marginBottom="8dp"/>
+
+                <Button
+                    android:id="@+id/btnAddPreset"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="+ Add Preset Food"
+                    android:backgroundTint="#4F46E5"
+                    android:textColor="#FFFFFF"
+                    android:layout_marginBottom="4dp"/>
+            </LinearLayout>
+
+            <!-- Custom food panel -->
+            <LinearLayout
+                android:id="@+id/panelCustom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Food name"
+                    android:textColor="#5F5E5A"
+                    android:textSize="13sp"
+                    android:layout_marginBottom="6dp"/>
+
+                <EditText
+                    android:id="@+id/etCustomName"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:hint="e.g. Som Tum, Steak, Smoothie"
+                    android:background="@drawable/input_bg"
+                    android:padding="12dp"
+                    android:inputType="text"
+                    android:layout_marginBottom="12dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Calories (kcal)"
+                    android:textColor="#5F5E5A"
+                    android:textSize="13sp"
+                    android:layout_marginBottom="6dp"/>
+
+                <EditText
+                    android:id="@+id/etCustomCal"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:hint="e.g. 350"
+                    android:background="@drawable/input_bg"
+                    android:padding="12dp"
+                    android:inputType="number"
+                    android:layout_marginBottom="12dp"/>
+
+                <Button
+                    android:id="@+id/btnAddCustom"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="+ Add Custom Food"
+                    android:backgroundTint="#4F46E5"
+                    android:textColor="#FFFFFF"
+                    android:layout_marginBottom="4dp"/>
+            </LinearLayout>
+
+            <!-- Today's meals list -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TODAY'S MEALS"
+                android:textColor="#5F5E5A"
+                android:textSize="11sp"
+                android:textStyle="bold"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="8dp"/>
+
+            <ListView
+                android:id="@+id/lvMeals"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:background="#FFFFFF"
+                android:divider="#F1EFE8"
+                android:dividerHeight="1dp"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- Bottom nav -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#FFFFFF"
+        android:padding="12dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="8dp">
+
+            <Button
+                android:id="@+id/btnResult"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="See Result"
+                android:backgroundTint="#4F46E5"
+                android:textColor="#FFFFFF"
+                android:textSize="12sp"
+                android:layout_marginEnd="4dp"/>
+
+            <Button
+                android:id="@+id/btnHistory"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="History"
+                android:backgroundTint="#E1F5EE"
+                android:textColor="#085041"
+                android:textSize="12sp"
+                android:layout_marginEnd="4dp"/>
+
+            <Button
+                android:id="@+id/btnTips"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Tips"
+                android:backgroundTint="#EAF3DE"
+                android:textColor="#27500A"
+                android:textSize="12sp"/>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnLogout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Logout"
+            android:backgroundTint="#FCEBEB"
+            android:textColor="#791F1F"/>
+    </LinearLayout>
+</LinearLayout>

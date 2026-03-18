@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F7FA"
+    tools:context=".LoginActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="🍱"
+        android:textSize="48sp"
+        android:gravity="center"
+        android:layout_x="0dp"
+        android:layout_y="80dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Calorie Planner"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="#1A1A2E"
+        android:gravity="center"
+        android:layout_x="0dp"
+        android:layout_y="150dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Track your daily nutrition"
+        android:textSize="13sp"
+        android:textColor="#888780"
+        android:gravity="center"
+        android:layout_x="0dp"
+        android:layout_y="190dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Username"
+        android:textSize="13sp"
+        android:textColor="#5F5E5A"
+        android:layout_x="32dp"
+        android:layout_y="245dp"/>
+
+    <EditText
+        android:id="@+id/etUsername"
+        android:layout_width="311dp"
+        android:layout_height="48dp"
+        android:hint="Enter username"
+        android:background="@drawable/input_bg"
+        android:padding="12dp"
+        android:inputType="text"
+        android:layout_x="32dp"
+        android:layout_y="265dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Password"
+        android:textSize="13sp"
+        android:textColor="#5F5E5A"
+        android:layout_x="32dp"
+        android:layout_y="330dp"/>
+
+    <EditText
+        android:id="@+id/etPassword"
+        android:layout_width="311dp"
+        android:layout_height="48dp"
+        android:hint="Enter password"
+        android:background="@drawable/input_bg"
+        android:padding="12dp"
+        android:inputType="textPassword"
+        android:layout_x="32dp"
+        android:layout_y="350dp"/>
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="311dp"
+        android:layout_height="50dp"
+        android:text="Login"
+        android:backgroundTint="#4F46E5"
+        android:textColor="#FFFFFF"
+        android:textSize="15sp"
+        android:layout_x="32dp"
+        android:layout_y="430dp"/>
+
+
+</AbsoluteLayout>

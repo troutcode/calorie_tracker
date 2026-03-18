@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F7FA"
+    tools:context=".ProfileActivity">
+
+    <AbsoluteLayout
+        android:layout_width="match_parent"
+        android:layout_height="820dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Your Profile"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="#1A1A2E"
+            android:layout_x="32dp"
+            android:layout_y="24dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fill this in once — used for all calculations"
+            android:textSize="13sp"
+            android:textColor="#888780"
+            android:layout_x="32dp"
+            android:layout_y="62dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Age (years)"
+            android:textSize="13sp"
+            android:textColor="#5F5E5A"
+            android:layout_x="32dp"
+            android:layout_y="105dp"/>
+        <EditText
+            android:id="@+id/etAge"
+            android:layout_width="311dp"
+            android:layout_height="48dp"
+            android:hint="e.g. 21"
+            android:background="@drawable/input_bg"
+            android:padding="12dp"
+            android:inputType="number"
+            android:layout_x="32dp"
+            android:layout_y="125dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Weight (kg)"
+            android:textSize="13sp"
+            android:textColor="#5F5E5A"
+            android:layout_x="32dp"
+            android:layout_y="190dp"/>
+        <EditText
+            android:id="@+id/etWeight"
+            android:layout_width="311dp"
+            android:layout_height="48dp"
+            android:hint="e.g. 60"
+            android:background="@drawable/input_bg"
+            android:padding="12dp"
+            android:inputType="numberDecimal"
+            android:layout_x="32dp"
+            android:layout_y="210dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Height (cm)"
+            android:textSize="13sp"
+            android:textColor="#5F5E5A"
+            android:layout_x="32dp"
+            android:layout_y="275dp"/>
+        <EditText
+            android:id="@+id/etHeight"
+            android:layout_width="311dp"
+            android:layout_height="48dp"
+            android:hint="e.g. 165"
+            android:background="@drawable/input_bg"
+            android:padding="12dp"
+            android:inputType="number"
+            android:layout_x="32dp"
+            android:layout_y="295dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Gender"
+            android:textSize="13sp"
+            android:textColor="#5F5E5A"
+            android:layout_x="32dp"
+            android:layout_y="360dp"/>
+        <Spinner
+            android:id="@+id/spGender"
+            android:layout_width="311dp"
+            android:layout_height="48dp"
+            android:background="@drawable/spinner_bg"
+            android:padding="8dp"
+            android:layout_x="32dp"
+            android:layout_y="380dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Activity Level"
+            android:textSize="13sp"
+            android:textColor="#5F5E5A"
+            android:layout_x="32dp"
+            android:layout_y="445dp"/>
+        <Spinner
+            android:id="@+id/spActivity"
+            android:layout_width="311dp"
+            android:layout_height="48dp"
+            android:background="@drawable/spinner_bg"
+            android:padding="8dp"
+            android:layout_x="32dp"
+            android:layout_y="465dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Goal"
+            android:textSize="13sp"
+            android:textColor="#5F5E5A"
+            android:layout_x="32dp"
+            android:layout_y="530dp"/>
+        <Spinner
+            android:id="@+id/spGoal"
+            android:layout_width="311dp"
+            android:layout_height="48dp"
+            android:background="@drawable/spinner_bg"
+            android:padding="8dp"
+            android:layout_x="32dp"
+            android:layout_y="550dp"/>
+
+        <Button
+            android:id="@+id/btnSaveProfile"
+            android:layout_width="311dp"
+            android:layout_height="50dp"
+            android:text="Save &amp; Continue"
+            android:backgroundTint="#4F46E5"
+            android:textColor="#FFFFFF"
+            android:textSize="15sp"
+            android:layout_x="32dp"
+            android:layout_y="630dp"/>
+
+    </AbsoluteLayout>
+
+</ScrollView>
