@@ -58,9 +58,8 @@
         android:id="@+id/btnFakeWeek"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Generate Test Week"
-        android:backgroundTint="#888780"
-        android:textColor="#FFFFFF"
-        android:layout_marginBottom="8dp"/>
+        android:layout_marginBottom="8dp"
+        android:backgroundTint="#FFFFFF"
+        android:textColor="#FFFFFF" />
 
 </LinearLayout>
