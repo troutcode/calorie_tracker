@@ -5,6 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/bg_page"
     tools:context=".ResultActivity">
 
     <LinearLayout
@@ -16,25 +17,26 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Your Result"
+            android:text="@string/result_title"
             android:textSize="22sp"
             android:textStyle="bold"
-            android:textColor="#1A1A2E"
+            android:textColor="@color/text_primary"
             android:layout_marginBottom="16dp"/>
 
+        <!-- Score card -->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:background="#4F46E5"
+            android:background="@color/bg_topbar"
             android:padding="20dp"
             android:layout_marginBottom="12dp">
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Today's Score"
-                android:textColor="#C7D2FE"
+                android:text="@string/label_score"
+                android:textColor="@color/accent_purple_text"
                 android:textSize="13sp"/>
 
             <TextView
@@ -50,30 +52,31 @@
                 android:id="@+id/tvScoreStatus"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textColor="#C7D2FE"
+                android:textColor="@color/accent_purple_text"
                 android:textSize="13sp"/>
         </LinearLayout>
 
+        <!-- BMI card -->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:background="#FFFFFF"
+            android:background="@color/bg_card"
             android:padding="16dp"
             android:layout_marginBottom="12dp">
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="BMI"
-                android:textColor="#888780"
+                android:text="@string/label_bmi"
+                android:textColor="@color/text_secondary"
                 android:textSize="12sp"/>
 
             <TextView
                 android:id="@+id/tvBMI"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textColor="#1A1A2E"
+                android:textColor="@color/text_primary"
                 android:textSize="20sp"
                 android:textStyle="bold"/>
 
@@ -84,30 +87,32 @@
                 android:textSize="13sp"/>
         </LinearLayout>
 
+        <!-- Calorie summary -->
         <TextView
             android:id="@+id/tvCalorieSummary"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="#FFFFFF"
+            android:background="@color/bg_card"
             android:padding="16dp"
-            android:textColor="#333333"
+            android:textColor="@color/text_primary"
             android:textSize="14sp"
             android:lineSpacingExtra="4dp"
             android:layout_marginBottom="12dp"/>
 
+        <!-- Macros -->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:background="#FFFFFF"
+            android:background="@color/bg_card"
             android:padding="16dp"
             android:layout_marginBottom="12dp">
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Daily Macro Targets"
-                android:textColor="#1A1A2E"
+                android:text="@string/label_macros"
+                android:textColor="@color/text_primary"
                 android:textStyle="bold"
                 android:textSize="14sp"
                 android:layout_marginBottom="12dp"/>
@@ -115,8 +120,8 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Protein"
-                android:textColor="#5F5E5A"
+                android:text="@string/label_protein"
+                android:textColor="@color/text_muted"
                 android:textSize="12sp"/>
             <ProgressBar
                 android:id="@+id/pbProtein"
@@ -124,22 +129,22 @@
                 android:layout_width="match_parent"
                 android:layout_height="8dp"
                 android:max="100"
-                android:progressTint="#4F46E5"
-                android:progressBackgroundTint="#F1EFE8"
+                android:progressTint="@color/accent_purple"
+                android:progressBackgroundTint="@color/progress_bg"
                 android:layout_marginBottom="2dp"/>
             <TextView
                 android:id="@+id/tvProtein"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textColor="#888780"
+                android:textColor="@color/text_secondary"
                 android:textSize="12sp"
                 android:layout_marginBottom="10dp"/>
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Carbohydrates"
-                android:textColor="#5F5E5A"
+                android:text="@string/label_carbs"
+                android:textColor="@color/text_muted"
                 android:textSize="12sp"/>
             <ProgressBar
                 android:id="@+id/pbCarbs"
@@ -148,21 +153,21 @@
                 android:layout_height="8dp"
                 android:max="100"
                 android:progressTint="#1D9E75"
-                android:progressBackgroundTint="#F1EFE8"
+                android:progressBackgroundTint="@color/progress_bg"
                 android:layout_marginBottom="2dp"/>
             <TextView
                 android:id="@+id/tvCarbs"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textColor="#888780"
+                android:textColor="@color/text_secondary"
                 android:textSize="12sp"
                 android:layout_marginBottom="10dp"/>
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Fat"
-                android:textColor="#5F5E5A"
+                android:text="@string/label_fat"
+                android:textColor="@color/text_muted"
                 android:textSize="12sp"/>
             <ProgressBar
                 android:id="@+id/pbFat"
@@ -171,23 +176,24 @@
                 android:layout_height="8dp"
                 android:max="100"
                 android:progressTint="#D85A30"
-                android:progressBackgroundTint="#F1EFE8"
+                android:progressBackgroundTint="@color/progress_bg"
                 android:layout_marginBottom="2dp"/>
             <TextView
                 android:id="@+id/tvFat"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textColor="#888780"
+                android:textColor="@color/text_secondary"
                 android:textSize="12sp"/>
         </LinearLayout>
 
+        <!-- Advice -->
         <TextView
             android:id="@+id/tvAdvice"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="#ECFDF5"
+            android:background="@color/accent_advice_bg"
             android:padding="16dp"
-            android:textColor="#065F46"
+            android:textColor="@color/accent_advice_text"
             android:textSize="14sp"
             android:lineSpacingExtra="4dp"
             android:layout_marginBottom="16dp"/>
@@ -196,9 +202,9 @@
             android:id="@+id/btnBack"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Back to Home"
-            android:backgroundTint="#E0E7FF"
-            android:textColor="#4F46E5"/>
+            android:text="@string/btn_back"
+            android:backgroundTint="@color/accent_purple_light"
+            android:textColor="@color/accent_purple"/>
 
     </LinearLayout>
 </ScrollView>

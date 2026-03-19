@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">แผนแคลอรี่</string>
+
+    <!-- Login -->
+    <string name="login_title">แผนแคลอรี่</string>
+    <string name="login_subtitle">ติดตามโภชนาการประจำวัน</string>
+    <string name="label_username">ชื่อผู้ใช้</string>
+    <string name="label_password">รหัสผ่าน</string>
+    <string name="hint_username">กรอกชื่อผู้ใช้</string>
+    <string name="hint_password">กรอกรหัสผ่าน</string>
+    <string name="btn_login">เข้าสู่ระบบ</string>
+
+    <!-- Profile -->
+    <string name="profile_title">ข้อมูลส่วนตัว</string>
+    <string name="profile_subtitle">กรอกครั้งเดียว — ใช้คำนวณทุกอย่าง</string>
+    <string name="label_age">อายุ (ปี)</string>
+    <string name="label_weight">น้ำหนัก (กก.)</string>
+    <string name="label_height">ส่วนสูง (ซม.)</string>
+    <string name="label_gender">เพศ</string>
+    <string name="label_activity">ระดับกิจกรรม</string>
+    <string name="label_goal">เป้าหมาย</string>
+    <string name="hint_age">เช่น 21</string>
+    <string name="hint_weight">เช่น 60</string>
+    <string name="hint_height">เช่น 165</string>
+    <string name="btn_save_profile">บันทึกและดำเนินการต่อ</string>
+    <string name="error_fill_all">กรุณากรอกข้อมูลให้ครบ</string>
+
+    <!-- Spinner options -->
+    <string name="gender_male">ชาย</string>
+    <string name="gender_female">หญิง</string>
+    <string name="activity_sedentary">ไม่ค่อยเคลื่อนไหว</string>
+    <string name="activity_light">เคลื่อนไหวเล็กน้อย</string>
+    <string name="activity_moderate">เคลื่อนไหวปานกลาง</string>
+    <string name="activity_very_active">เคลื่อนไหวมาก</string>
+    <string name="goal_maintain">รักษาน้ำหนัก</string>
+    <string name="goal_lose">ลดน้ำหนัก</string>
+    <string name="goal_gain">เพิ่มกล้ามเนื้อ</string>
+
+    <!-- Main -->
+    <string name="greeting">สวัสดี,</string>
+    <string name="label_eaten_today">กินวันนี้</string>
+    <string name="label_daily_target">เป้าหมายต่อวัน</string>
+    <string name="label_add_food">เพิ่มอาหาร</string>
+    <string name="label_preset">อาหารสำเร็จรูป</string>
+    <string name="label_custom">กรอกเอง</string>
+    <string name="btn_add_preset">+ เพิ่มอาหารสำเร็จรูป</string>
+    <string name="btn_add_custom">+ เพิ่มอาหารที่กรอกเอง</string>
+    <string name="label_food_name">ชื่ออาหาร</string>
+    <string name="label_calories">แคลอรี่ (กิโลแคล)</string>
+    <string name="hint_food_name">เช่น ส้มตำ, สเต็ก</string>
+    <string name="hint_calories">เช่น 350</string>
+    <string name="label_todays_meals">อาหารวันนี้</string>
+    <string name="btn_result">ดูผลลัพธ์</string>
+    <string name="btn_history">ประวัติ</string>
+    <string name="btn_tips">เคล็ดลับ</string>
+    <string name="btn_logout">ออกจากระบบ</string>
+    <string name="menu_settings">ตั้งค่า</string>
+    <string name="menu_logout">ออกจากระบบ</string>
+    <string name="error_enter_name">กรุณากรอกชื่ออาหาร</string>
+    <string name="error_enter_cal">กรุณากรอกแคลอรี่</string>
+    <string name="error_cal_zero">แคลอรี่ต้องมากกว่า 0</string>
+    <string name="added">เพิ่มแล้ว!</string>
+
+    <!-- Result -->
+    <string name="result_title">ผลลัพธ์ของคุณ</string>
+    <string name="label_score">คะแนนวันนี้</string>
+    <string name="label_bmi">ดัชนีมวลกาย</string>
+    <string name="label_macros">เป้าหมายสารอาหาร</string>
+    <string name="label_protein">โปรตีน</string>
+    <string name="label_carbs">คาร์โบไฮเดรต</string>
+    <string name="label_fat">ไขมัน</string>
+    <string name="label_recommendation">คำแนะนำ:</string>
+    <string name="btn_back">กลับหน้าหลัก</string>
+
+    <!-- History -->
+    <string name="history_title">ประวัติ</string>
+    <string name="history_subtitle">7 วันล่าสุด</string>
+    <string name="btn_clear_history">ล้างประวัติ</string>
+    <string name="history_cleared">ล้างประวัติแล้ว</string>
+    <string name="no_history">ยังไม่มีประวัติ</string>
+
+    <!-- Tips -->
+    <string name="tips_title">เคล็ดลับโภชนาการ</string>
+    <string name="tips_goal_prefix">เคล็ดลับสำหรับเป้าหมาย: </string>
+
+    <!-- Settings -->
+    <string name="settings_title">ตั้งค่า</string>
+    <string name="settings_dark_mode">โหมดมืด</string>
+    <string name="settings_language">ภาษา</string>
+    <string name="lang_english">อังกฤษ</string>
+    <string name="lang_thai">ไทย</string>
+    <string name="btn_apply">บันทึกและรีสตาร์ท</string>
+
+    <!-- Tips - Lose Weight -->
+    <string name="tip_lose_1">กินให้ขาดดุล 500 กิโลแคลต่อวัน จะช่วยลดไขมันได้ประมาณ 0.5 กก. ต่อสัปดาห์โดยไม่ทำลายการเผาผลาญ</string>
+    <string name="tip_lose_2">ให้ความสำคัญกับโปรตีนในทุกมื้อ โปรตีนช่วยให้อิ่มนานและป้องกันการสูญเสียกล้ามเนื้อขณะลดแคลอรี่</string>
+    <string name="tip_lose_3">หลีกเลี่ยงแคลอรี่จากของเหลว เช่น น้ำหวาน น้ำผลไม้ และแอลกอฮอล์ สะสมได้เร็วโดยไม่รู้สึกอิ่ม</string>
+    <string name="tip_lose_4">เวลามื้ออาหาร: กินมื้อใหญ่ก่อนบ่าย 2 โมง มื้อเย็นควรเบา เน้นโปรตีนและผัก</string>
+    <string name="tip_lose_5">การดื่มน้ำ: ดื่มน้ำหนึ่งแก้วก่อนทุกมื้อ ช่วยลดความหิวและทำให้กินน้อยลงได้เองตามธรรมชาติ</string>
+
+    <!-- Tips - Gain Muscle -->
+    <string name="tip_gain_1">กินเกินดุล 300 กิโลแคลต่อวัน มากกว่านี้จะทำให้สะสมไขมันเกินความจำเป็น ค่อยๆ สร้างกล้ามเนื้อจะดีกว่า</string>
+    <string name="tip_gain_2">ตั้งเป้าโปรตีน 1.6–2.2 กรัมต่อกก.ของน้ำหนักตัว สำหรับคนหนัก 65 กก. คือ 104–143 กรัมต่อวัน</string>
+    <string name="tip_gain_3">คาร์โบไฮเดรตคือเพื่อนของคุณ ช่วยเติมพลังงานในการออกกำลังกายและฟื้นฟูไกลโคเจน ไม่ควรตัดออกช่วงเพิ่มมวล</string>
+    <string name="tip_gain_4">เวลามื้ออาหาร: กินโปรตีนและคาร์บภายใน 1 ชั่วโมงหลังออกกำลังกาย นี่คือมื้อที่สำคัญที่สุดของวัน</string>
+    <string name="tip_gain_5">การดื่มน้ำ: ตั้งเป้า 3 ลิตรต่อวัน กล้ามเนื้อประกอบด้วยน้ำ 75% การขาดน้ำทำให้ความแข็งแรงลดลงโดยตรง</string>
+
+    <!-- Tips - Maintain -->
+    <string name="tip_maintain_1">กินให้ได้ตาม TDEE ไม่มากไม่น้อย ใช้แอปทุกวันเพื่อความสม่ำเสมอและตระหนักถึงปริมาณที่กิน</string>
+    <string name="tip_maintain_2">จัดจานให้สมดุล: ครึ่งหนึ่งเป็นผัก หนึ่งในสี่เป็นโปรตีน หนึ่งในสี่เป็นคาร์โบไฮเดรต สัดส่วนนี้เหมาะกับคนส่วนใหญ่</string>
+    <string name="tip_maintain_3">อย่าอดมื้ออาหาร การอดมื้อทำให้กินมากเกินในมื้อถัดไป สามมื้อหลักและของว่างเบาๆ หนึ่งมื้อคือสูตรที่ดี</string>
+    <string name="tip_maintain_4">เวลามื้ออาหาร: กินอาหารเช้าภายใน 1 ชั่วโมงหลังตื่นนอน ช่วยให้การเผาผลาญทำงานได้ดีตลอดวัน</string>
+    <string name="tip_maintain_5">การดื่มน้ำ: ดื่มน้ำอย่างน้อย 2 ลิตรต่อวัน ความกระหายมักถูกเข้าใจผิดว่าหิวข้าว ดื่มน้ำก่อนแล้วค่อยตัดสินใจ</string>
+</resources>

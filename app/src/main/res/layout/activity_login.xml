@@ -5,7 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#F5F7FA"
+    android:background="@color/bg_page"
     tools:context=".LoginActivity">
 
     <TextView
@@ -20,10 +20,10 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Calorie Planner"
+        android:text="@string/login_title"
         android:textSize="24sp"
         android:textStyle="bold"
-        android:textColor="#1A1A2E"
+        android:textColor="@color/text_primary"
         android:gravity="center"
         android:layout_x="0dp"
         android:layout_y="150dp"/>
@@ -31,9 +31,9 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Track your daily nutrition"
+        android:text="@string/login_subtitle"
         android:textSize="13sp"
-        android:textColor="#888780"
+        android:textColor="@color/text_secondary"
         android:gravity="center"
         android:layout_x="0dp"
         android:layout_y="190dp"/>
@@ -41,9 +41,9 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Username"
+        android:text="@string/label_username"
         android:textSize="13sp"
-        android:textColor="#5F5E5A"
+        android:textColor="@color/text_muted"
         android:layout_x="32dp"
         android:layout_y="245dp"/>
 
@@ -51,19 +51,20 @@
         android:id="@+id/etUsername"
         android:layout_width="311dp"
         android:layout_height="48dp"
-        android:hint="Enter username"
+        android:hint="@string/hint_username"
         android:background="@drawable/input_bg"
         android:padding="12dp"
         android:inputType="text"
+        android:textColor="@color/text_primary"
         android:layout_x="32dp"
         android:layout_y="265dp"/>
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Password"
+        android:text="@string/label_password"
         android:textSize="13sp"
-        android:textColor="#5F5E5A"
+        android:textColor="@color/text_muted"
         android:layout_x="32dp"
         android:layout_y="330dp"/>
 
@@ -71,10 +72,11 @@
         android:id="@+id/etPassword"
         android:layout_width="311dp"
         android:layout_height="48dp"
-        android:hint="Enter password"
+        android:hint="@string/hint_password"
         android:background="@drawable/input_bg"
         android:padding="12dp"
         android:inputType="textPassword"
+        android:textColor="@color/text_primary"
         android:layout_x="32dp"
         android:layout_y="350dp"/>
 
@@ -82,12 +84,11 @@
         android:id="@+id/btnLogin"
         android:layout_width="311dp"
         android:layout_height="50dp"
-        android:text="Login"
-        android:backgroundTint="#4F46E5"
+        android:text="@string/btn_login"
+        android:backgroundTint="@color/accent_purple"
         android:textColor="#FFFFFF"
         android:textSize="15sp"
         android:layout_x="32dp"
         android:layout_y="430dp"/>
-
 
 </AbsoluteLayout>

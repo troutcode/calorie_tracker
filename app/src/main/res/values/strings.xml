@@ -1,3 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">CalTracker</string>
+    <string name="app_name">Calorie Planner</string>
+
+    <!-- Login -->
+    <string name="login_title">Calorie Planner</string>
+    <string name="login_subtitle">Track your daily nutrition</string>
+    <string name="label_username">Username</string>
+    <string name="label_password">Password</string>
+    <string name="hint_username">Enter username</string>
+    <string name="hint_password">Enter password</string>
+    <string name="btn_login">Login</string>
+
+    <!-- Profile -->
+    <string name="profile_title">Your Profile</string>
+    <string name="profile_subtitle">Fill this in once — used for all calculations</string>
+    <string name="label_age">Age (years)</string>
+    <string name="label_weight">Weight (kg)</string>
+    <string name="label_height">Height (cm)</string>
+    <string name="label_gender">Gender</string>
+    <string name="label_activity">Activity Level</string>
+    <string name="label_goal">Goal</string>
+    <string name="hint_age">e.g. 21</string>
+    <string name="hint_weight">e.g. 60</string>
+    <string name="hint_height">e.g. 165</string>
+    <string name="btn_save_profile">Save &amp; Continue</string>
+    <string name="error_fill_all">Please fill in all fields</string>
+
+    <!-- Spinner options -->
+    <string name="gender_male">Male</string>
+    <string name="gender_female">Female</string>
+    <string name="activity_sedentary">Sedentary</string>
+    <string name="activity_light">Light</string>
+    <string name="activity_moderate">Moderate</string>
+    <string name="activity_very_active">Very Active</string>
+    <string name="goal_maintain">Maintain</string>
+    <string name="goal_lose">Lose Weight</string>
+    <string name="goal_gain">Gain Muscle</string>
+
+    <!-- Main -->
+    <string name="greeting">Good morning,</string>
+    <string name="label_eaten_today">Eaten today</string>
+    <string name="label_daily_target">Daily target</string>
+    <string name="label_add_food">ADD FOOD</string>
+    <string name="label_preset">Preset Foods</string>
+    <string name="label_custom">Custom Entry</string>
+    <string name="btn_add_preset">+ Add Preset Food</string>
+    <string name="btn_add_custom">+ Add Custom Food</string>
+    <string name="label_food_name">Food name</string>
+    <string name="label_calories">Calories (kcal)</string>
+    <string name="hint_food_name">e.g. Som Tum, Steak, Smoothie</string>
+    <string name="hint_calories">e.g. 350</string>
+    <string name="label_todays_meals">TODAY\'S MEALS</string>
+    <string name="btn_result">See Result</string>
+    <string name="btn_history">History</string>
+    <string name="btn_tips">Tips</string>
+    <string name="btn_logout">Logout</string>
+    <string name="menu_settings">Settings</string>
+    <string name="menu_logout">Logout</string>
+    <string name="error_enter_name">Please enter a food name</string>
+    <string name="error_enter_cal">Please enter calories</string>
+    <string name="error_cal_zero">Calories must be more than 0</string>
+    <string name="added">added!</string>
+
+    <!-- Result -->
+    <string name="result_title">Your Result</string>
+    <string name="label_score">Today\'s Score</string>
+    <string name="label_bmi">BMI</string>
+    <string name="label_macros">Daily Macro Targets</string>
+    <string name="label_protein">Protein</string>
+    <string name="label_carbs">Carbohydrates</string>
+    <string name="label_fat">Fat</string>
+    <string name="label_recommendation">Recommendation:</string>
+    <string name="btn_back">Back to Home</string>
+
+    <!-- History -->
+    <string name="history_title">History</string>
+    <string name="history_subtitle">Your last 7 days</string>
+    <string name="btn_clear_history">Clear History</string>
+    <string name="history_cleared">History cleared</string>
+    <string name="no_history">No history yet</string>
+
+    <!-- Tips -->
+    <string name="tips_title">Nutrition Tips</string>
+    <string name="tips_goal_prefix">Tips for your goal: </string>
+
+    <!-- Settings -->
+    <string name="settings_title">Settings</string>
+    <string name="settings_dark_mode">Dark Mode</string>
+    <string name="settings_language">Language</string>
+    <string name="lang_english">English</string>
+    <string name="lang_thai">Thai</string>
+    <string name="btn_apply">Apply &amp; Restart</string>
+
+    <!-- Tips - Lose Weight -->
+    <string name="tip_lose_1">Eat at a 500 kcal deficit daily. This creates roughly 0.5 kg of fat loss per week without harming your metabolism.</string>
+    <string name="tip_lose_2">Prioritize protein in every meal. Protein keeps you full longer and prevents muscle loss while in a calorie deficit.</string>
+    <string name="tip_lose_3">Avoid liquid calories — sugary drinks, juice, and alcohol add up fast without making you feel full.</string>
+    <string name="tip_lose_4">Meal timing: Eat your largest meal before 2pm. Evening meals should be lighter — mostly protein and vegetables.</string>
+    <string name="tip_lose_5">Hydration: Drink a full glass of water before each meal. It reduces hunger and helps you eat less naturally.</string>
+
+    <!-- Tips - Gain Muscle -->
+    <string name="tip_gain_1">Eat at a 300 kcal surplus daily. More than this leads to unnecessary fat gain. Slow and steady builds lean muscle.</string>
+    <string name="tip_gain_2">Aim for 1.6–2.2g of protein per kg of bodyweight. For a 65kg person that is 104–143g of protein per day.</string>
+    <string name="tip_gain_3">Carbohydrates are your friend. They fuel your workouts and replenish glycogen. Do not cut them when bulking.</string>
+    <string name="tip_gain_4">Meal timing: Have a protein and carb meal within 1 hour after training. This is your most important meal of the day.</string>
+    <string name="tip_gain_5">Hydration: Aim for 3 litres of water daily. Muscles are 75% water — dehydration directly reduces strength.</string>
+
+    <!-- Tips - Maintain -->
+    <string name="tip_maintain_1">Eat at your TDEE — not above, not below. Use the app daily to stay consistent and aware of your intake.</string>
+    <string name="tip_maintain_2">Balance your plate: half vegetables, a quarter protein, a quarter carbohydrates. This ratio works for most people.</string>
+    <string name="tip_maintain_3">Do not skip meals. Skipping leads to overeating later. Three balanced meals and one small snack is ideal.</string>
+    <string name="tip_maintain_4">Meal timing: Breakfast within 1 hour of waking keeps your metabolism active throughout the day.</string>
+    <string name="tip_maintain_5">Hydration: Drink at least 2 litres of water daily. Thirst is often mistaken for hunger — drink first, then decide.</string>
 </resources>

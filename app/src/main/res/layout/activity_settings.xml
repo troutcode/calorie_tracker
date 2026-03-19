@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/bg_page"
+    android:padding="24dp"
+    tools:context=".SettingsActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/settings_title"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:textColor="@color/text_primary"
+        android:layout_marginBottom="32dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/bg_card"
+        android:padding="16dp"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="12dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/settings_dark_mode"
+            android:textSize="15sp"
+            android:textColor="@color/text_primary"/>
+
+        <Switch
+            android:id="@+id/switchDarkMode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/bg_card"
+        android:padding="16dp"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="32dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/settings_language"
+            android:textSize="15sp"
+            android:textColor="@color/text_primary"/>
+
+        <Spinner
+            android:id="@+id/spLanguage"
+            android:layout_width="140dp"
+            android:layout_height="40dp"
+            android:background="@drawable/spinner_bg"
+            android:entries="@array/language_options"
+            android:padding="6dp"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnApplySettings"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_apply"
+        android:backgroundTint="@color/accent_purple"
+        android:textColor="#FFFFFF"
+        android:textSize="15sp"
+        android:layout_marginBottom="12dp"/>
+
+    <Button
+        android:id="@+id/btnBackSettings"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_back"
+        android:backgroundTint="@color/accent_purple_light"
+        android:textColor="@color/accent_purple"/>
+</LinearLayout>

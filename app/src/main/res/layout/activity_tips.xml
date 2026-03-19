@@ -5,6 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/bg_page"
     tools:context=".TipsActivity">
 
     <LinearLayout
@@ -16,10 +17,10 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Nutrition Tips"
+            android:text="@string/tips_title"
             android:textSize="22sp"
             android:textStyle="bold"
-            android:textColor="#1A1A2E"
+            android:textColor="@color/text_primary"
             android:layout_marginBottom="4dp"/>
 
         <TextView
@@ -27,17 +28,17 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textSize="13sp"
-            android:textColor="#888780"
+            android:textColor="@color/text_secondary"
             android:layout_marginBottom="20dp"/>
 
         <TextView
             android:id="@+id/tvTip1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="#FFFFFF"
+            android:background="@color/bg_card"
             android:padding="16dp"
             android:textSize="14sp"
-            android:textColor="#1A1A2E"
+            android:textColor="@color/text_primary"
             android:lineSpacingExtra="4dp"
             android:layout_marginBottom="10dp"/>
 
@@ -45,10 +46,10 @@
             android:id="@+id/tvTip2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="#FFFFFF"
+            android:background="@color/bg_card"
             android:padding="16dp"
             android:textSize="14sp"
-            android:textColor="#1A1A2E"
+            android:textColor="@color/text_primary"
             android:lineSpacingExtra="4dp"
             android:layout_marginBottom="10dp"/>
 
@@ -56,10 +57,10 @@
             android:id="@+id/tvTip3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="#FFFFFF"
+            android:background="@color/bg_card"
             android:padding="16dp"
             android:textSize="14sp"
-            android:textColor="#1A1A2E"
+            android:textColor="@color/text_primary"
             android:lineSpacingExtra="4dp"
             android:layout_marginBottom="10dp"/>
 
@@ -67,10 +68,10 @@
             android:id="@+id/tvTip4"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="#EAF3DE"
+            android:background="@color/accent_green_bg"
             android:padding="16dp"
             android:textSize="14sp"
-            android:textColor="#27500A"
+            android:textColor="@color/accent_green_text"
             android:lineSpacingExtra="4dp"
             android:layout_marginBottom="10dp"/>
 
@@ -78,10 +79,10 @@
             android:id="@+id/tvTip5"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="#E1F5EE"
+            android:background="@color/accent_teal_bg"
             android:padding="16dp"
             android:textSize="14sp"
-            android:textColor="#085041"
+            android:textColor="@color/accent_teal_text"
             android:lineSpacingExtra="4dp"
             android:layout_marginBottom="20dp"/>
 
@@ -89,9 +90,9 @@
             android:id="@+id/btnBackTips"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Back to Home"
-            android:backgroundTint="#E0E7FF"
-            android:textColor="#4F46E5"/>
+            android:text="@string/btn_back"
+            android:backgroundTint="@color/accent_purple_light"
+            android:textColor="@color/accent_purple"/>
 
     </LinearLayout>
 </ScrollView>

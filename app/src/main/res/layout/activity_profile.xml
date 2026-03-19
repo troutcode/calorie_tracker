@@ -5,7 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#F5F7FA"
+    android:background="@color/bg_page"
     tools:context=".ProfileActivity">
 
     <AbsoluteLayout
@@ -15,85 +15,88 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Your Profile"
+            android:text="@string/profile_title"
             android:textSize="22sp"
             android:textStyle="bold"
-            android:textColor="#1A1A2E"
+            android:textColor="@color/text_primary"
             android:layout_x="32dp"
             android:layout_y="24dp"/>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Fill this in once — used for all calculations"
+            android:text="@string/profile_subtitle"
             android:textSize="13sp"
-            android:textColor="#888780"
+            android:textColor="@color/text_secondary"
             android:layout_x="32dp"
             android:layout_y="62dp"/>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Age (years)"
+            android:text="@string/label_age"
             android:textSize="13sp"
-            android:textColor="#5F5E5A"
+            android:textColor="@color/text_muted"
             android:layout_x="32dp"
             android:layout_y="105dp"/>
         <EditText
             android:id="@+id/etAge"
             android:layout_width="311dp"
             android:layout_height="48dp"
-            android:hint="e.g. 21"
+            android:hint="@string/hint_age"
             android:background="@drawable/input_bg"
             android:padding="12dp"
             android:inputType="number"
+            android:textColor="@color/text_primary"
             android:layout_x="32dp"
             android:layout_y="125dp"/>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Weight (kg)"
+            android:text="@string/label_weight"
             android:textSize="13sp"
-            android:textColor="#5F5E5A"
+            android:textColor="@color/text_muted"
             android:layout_x="32dp"
             android:layout_y="190dp"/>
         <EditText
             android:id="@+id/etWeight"
             android:layout_width="311dp"
             android:layout_height="48dp"
-            android:hint="e.g. 60"
+            android:hint="@string/hint_weight"
             android:background="@drawable/input_bg"
             android:padding="12dp"
             android:inputType="numberDecimal"
+            android:textColor="@color/text_primary"
             android:layout_x="32dp"
             android:layout_y="210dp"/>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Height (cm)"
+            android:text="@string/label_height"
             android:textSize="13sp"
-            android:textColor="#5F5E5A"
+            android:textColor="@color/text_muted"
             android:layout_x="32dp"
             android:layout_y="275dp"/>
         <EditText
             android:id="@+id/etHeight"
             android:layout_width="311dp"
             android:layout_height="48dp"
-            android:hint="e.g. 165"
+            android:hint="@string/hint_height"
             android:background="@drawable/input_bg"
             android:padding="12dp"
             android:inputType="number"
+            android:textColor="@color/text_primary"
             android:layout_x="32dp"
             android:layout_y="295dp"/>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Gender"
+            android:text="@string/label_gender"
             android:textSize="13sp"
-            android:textColor="#5F5E5A"
+            android:textColor="@color/text_muted"
             android:layout_x="32dp"
             android:layout_y="360dp"/>
         <Spinner
@@ -102,15 +105,16 @@
             android:layout_height="48dp"
             android:background="@drawable/spinner_bg"
             android:padding="8dp"
+            android:entries="@array/gender_options"
             android:layout_x="32dp"
             android:layout_y="380dp"/>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Activity Level"
+            android:text="@string/label_activity"
             android:textSize="13sp"
-            android:textColor="#5F5E5A"
+            android:textColor="@color/text_muted"
             android:layout_x="32dp"
             android:layout_y="445dp"/>
         <Spinner
@@ -119,15 +123,16 @@
             android:layout_height="48dp"
             android:background="@drawable/spinner_bg"
             android:padding="8dp"
+            android:entries="@array/activity_options"
             android:layout_x="32dp"
             android:layout_y="465dp"/>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Goal"
+            android:text="@string/label_goal"
             android:textSize="13sp"
-            android:textColor="#5F5E5A"
+            android:textColor="@color/text_muted"
             android:layout_x="32dp"
             android:layout_y="530dp"/>
         <Spinner
@@ -136,6 +141,7 @@
             android:layout_height="48dp"
             android:background="@drawable/spinner_bg"
             android:padding="8dp"
+            android:entries="@array/goal_options"
             android:layout_x="32dp"
             android:layout_y="550dp"/>
 
@@ -143,8 +149,8 @@
             android:id="@+id/btnSaveProfile"
             android:layout_width="311dp"
             android:layout_height="50dp"
-            android:text="Save &amp; Continue"
-            android:backgroundTint="#4F46E5"
+            android:text="@string/btn_save_profile"
+            android:backgroundTint="@color/accent_purple"
             android:textColor="#FFFFFF"
             android:textSize="15sp"
             android:layout_x="32dp"

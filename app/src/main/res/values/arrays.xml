@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="gender_options">
+        <item>@string/gender_male</item>
+        <item>@string/gender_female</item>
+    </string-array>
+
+    <string-array name="activity_options">
+        <item>@string/activity_sedentary</item>
+        <item>@string/activity_light</item>
+        <item>@string/activity_moderate</item>
+        <item>@string/activity_very_active</item>
+    </string-array>
+
+    <string-array name="goal_options">
+        <item>@string/goal_maintain</item>
+        <item>@string/goal_lose</item>
+        <item>@string/goal_gain</item>
+    </string-array>
+
+    <string-array name="language_options">
+        <item>@string/lang_english</item>
+        <item>@string/lang_thai</item>
+    </string-array>
+</resources>

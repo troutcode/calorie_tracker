@@ -6,25 +6,25 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="#F5F7FA"
+    android:background="@color/bg_page"
     android:padding="20dp"
     tools:context=".HistoryActivity">
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="History"
+        android:text="@string/history_title"
         android:textSize="22sp"
         android:textStyle="bold"
-        android:textColor="#1A1A2E"
+        android:textColor="@color/text_primary"
         android:layout_marginBottom="4dp"/>
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Your last 7 days"
+        android:text="@string/history_subtitle"
         android:textSize="13sp"
-        android:textColor="#888780"
+        android:textColor="@color/text_secondary"
         android:layout_marginBottom="16dp"/>
 
     <ListView
@@ -32,8 +32,8 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
-        android:background="#FFFFFF"
-        android:divider="#F1EFE8"
+        android:background="@color/bg_card"
+        android:divider="@color/divider"
         android:dividerHeight="1dp"
         android:layout_marginBottom="16dp"/>
 
@@ -41,16 +41,26 @@
         android:id="@+id/btnClearHistory"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Clear History"
-        android:backgroundTint="#FCEBEB"
-        android:textColor="#791F1F"
+        android:text="@string/btn_clear_history"
+        android:backgroundTint="@color/accent_red_bg"
+        android:textColor="@color/accent_red_text"
         android:layout_marginBottom="8dp"/>
 
     <Button
         android:id="@+id/btnBackHistory"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Back to Home"
-        android:backgroundTint="#E0E7FF"
-        android:textColor="#4F46E5"/>
+        android:text="@string/btn_back"
+        android:backgroundTint="@color/accent_purple_light"
+        android:textColor="@color/accent_purple"/>
+
+    <Button
+        android:id="@+id/btnFakeWeek"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Generate Test Week"
+        android:backgroundTint="#888780"
+        android:textColor="#FFFFFF"
+        android:layout_marginBottom="8dp"/>
+
 </LinearLayout>
